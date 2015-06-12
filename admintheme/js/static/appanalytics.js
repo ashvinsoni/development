@@ -1,0 +1,1 @@
+var Fantasy = angular.module('mdapp', ['googlechart']);

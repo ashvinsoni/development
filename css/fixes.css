@@ -1,0 +1,106 @@
+.widgetIndex{z-index: 1000!important;}
+.middle-loader{
+  max-width: 979px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+.middle-loader-scoring
+{
+     max-width: 979px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+.widget_rightbar_snap{position: absolute;}
+#snap-1{top:5%; height:12%;}
+#snap-2{top:23%;height:12%;}
+#snap-3{top:41%;height:12%;}
+#snap-4{top:59%;height:12%;}
+#snap-5{top:77%;height:12%;}
+
+.sports-details:last-child{margin-bottom: 0px;}
+.mygames-height{max-height:658px;overflow-y:auto;overflow-x:hidden;}
+.lobby-feature-height{max-height:658px;overflow-y:auto;overflow-x:hidden;margin-bottom: 20px;}
+.mygames-main{margin-bottom: 20px;}
+/*Static Pages Css*/
+.list-faq li{list-style-type: disc;margin-top: 10px;}
+.faq-content{height: 600px;overflow-y:scroll;overflow-x:hidden; }
+.faq-content h3{margin: 10px 0px 10px 0px;font-weight: bold;font-size: 48px;line-height: 55px;padding-bottom:10px;}
+.privacy-content{height: 600px;overflow-y:scroll;overflow-x:hidden; }
+.privacy-content h3{margin: 10px 0px 10px 0px;font-weight: bold;font-size: 18px;}
+.terms-content{height: 600px;overflow-y:scroll;overflow-x:hidden; }
+.rules-content{height: 600px;overflow-y:scroll;overflow-x:hidden;}
+.terms-content h3{margin: 10px 0px 10px 0px;font-size: 18px;/*line-height: 55px;padding-bottom: 20px;*/}
+.list-privacy li{list-style-type: disc;  margin-top: 5px;
+  line-height: 25px;
+  font-size: 18px;}
+.list-privacy li:last-child{margin-bottom: 10px;}
+#image_loader{ position:absolute; left:50%; margin-left:-14px; top:0; width:28px; height:28px;}
+.tool-width{width: 60px;}
+.answerChoose{background-color: rgba(0,153,220,0.8)!important;}
+.team_count{color: #FAD268;}
+.chosen-single span{width: 90%;position: relative;z-index: 100;font-size: 14px;}
+.myprofile-error{ position: relative; border-color: #BD4A48;}
+.no-found{padding: 10px;color: #333; display:block; text-align:center; line-height:22px;}
+.remove-profile-pic{ position:absolute; top:50%; border-radius: 50%; left: 50%; color:#fff; width:40px; height: 40px; display:none; background: #F04948; margin-left:-20px; margin-top:-20px; text-align:center; line-height: 40px;}
+.profile-picture:hover .remove-profile-pic{ display: block;cursor: pointer;}
+.total_game{color: #333;margin-left: 10px;  color: #fff;}
+.new_game .checkbox label{padding:5px 0 0 30px !important;  color: #ccc;}
+.SelectAll{margin-bottom: 10px;margin-top: 10px;}
+.creategame-footer .btn-loader.loaderBtn{height: auto;width: auto;}
+.creategame-footer .btn-loader .button{width: auto;height: auto;}
+.checkbox{margin-left:5px;}
+.popup-user-list{overflow-y: auto;height: 300px;padding-bottom: 20px;}
+.recapcta-inputfield{width:50%;margin-top:10px;display:inline-block;vertical-align:middle;}
+.captcha-shift{margin-left:5px;display:inline-block;vertical-align:middle;}
+.prize_tag{color:#fff;font-size:16px!important;font-weight:normal!important;}
+.prize_tag:hover{color:#fff;}
+.lft-frnd .friend-list{height:87%; overflow-y:auto;}
+.widget-cover .chat-userlist{height:90%; overflow-y:auto;}
+.chat-userlist{height:70%; overflow-y:auto;}
+.nrlheight{height:560px;}
+.cap-sel{margin-bottom: 15px;}
+.my_games_not_found > h2, .invitation_not_found > h2{color:#333;padding:70px 10px 70px 10px; text-align:center;}
+.lft-frnd .friend-list .user-name{ word-wrap:break-word; width:110px; line-height:22px; padding-top:15px;}
+.chat-bar.invite-friends .widgets-content{overflow-y:visible; height:93%;}
+.paypalOption{display:block; margin-top:10px;}
+.mygames-main .game-inner-details > .block{height:60px;}
+
+.reload-captcha {
+  top: 75px;
+  right: 15px;
+  position: absolute;
+  width: 50%;
+  display: block;
+  background: url(../img/reload.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin: 3px auto;
+}
+input[type="text"]:disabled {
+  color: #4D4D4D !important;
+}
+.text_disabled {  background: #6B6B6B !important;}
+.nodata {border: 0 !important; }
+.nodata td{text-align: center !important;padding:50px 0 !important;}
+
+@media (max-width: 1366px){
+    .lft-frnd .friend-list, .chat-userlist{height:74%; overflow-y:auto;}
+    .lft-frnd .friend-list .user-name{width:65px;}
+    .widget-cover{height: 100%;}
+ 
+}
+@media (min-width: 980px) and (max-width: 1365px){
+.widget-cover .chat-userlist{ height:83%;}
+
+}
+
+.prize-details-dropdown {top: 30px;left: 0px;}
+.widgets-container{}
+@media (max-width: 767px) {
+.faq-content h3, .privacy-content h3, .terms-content h3{font-size:28px;line-height:28px;}
+.myprofile-option.static-bg .content{padding:15px 10%;}
+.content.faq-content table{font-size:14px;}
+
+}

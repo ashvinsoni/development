@@ -1,0 +1,340 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		
+		<title>Fantacy Sports</title>
+
+		
+<base href="<?php echo base_url();?>/fantasysports-php/admintheme/" />
+
+<link href="css/main.css?v=1.4" rel="stylesheet" type="text/css" />
+<link href="css/fixes.css?v=1.4" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css' />
+
+<script type="text/javascript" src="js/1.7-jquery.min.js?v=1.4"></script>
+
+<script type="text/javascript">
+	var base_url = '<?php echo base_url();?>/fantasysports-php/';
+	var site_url = '<?php echo base_url();?>/fantasysports-php/';
+</script>
+<script type="text/javascript" src="js/message.js?v=1.4"></script>
+	</head>
+	<body>
+
+		<!-- Nav Bar Start -->
+			<!-- Top navigation bar -->
+<div id="topNav">
+	<div class="fixed">
+		<div class="wrapper">
+							<div class="welcome">
+					<a href="javascript:void(0);" title=""><img src="images/userPic.png" alt="" /></a>
+					<span>Vishal Patil !</span>
+				</div>
+				<div class="userNav">
+					<ul>
+						<li>
+							<a href="<?php echo base_url();?>/fantasysports-php/auth/logout" title="" class="logout">
+								<img src="images/icons/topnav/logout.png" alt="" />
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+						<div class="fix"></div>
+		</div>
+	</div>
+</div>
+
+<div class="pt20 errmain">
+
+	
+	
+	
+	
+</div>		<!-- Nav Bar End -->
+					<!-- Content wrapper -->
+			<div class="wrapper">
+			<!-- Left navigation -->
+<div class="leftNav">
+	<ul id="menu">
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin" title="Game" class="active">
+				<span>Game</span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin/roster" title="Roster Management" class="">
+				<span>Roster Management</span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin" title="" class="exp">
+				<span>Promo Codes</span>
+			</a>
+			<ul class="sub">
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/sales_person" title="">Sales Persons</a>
+				</li>
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/promo_code" title="">Promo Codes</a>
+				</li>
+				<li class="last">
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/commission_payout" title="">Commission Payout</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin/user" title="" class="">
+				<span>User Monitoring</span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin" title="" class="exp">
+				<span>Reports</span>
+			</a>
+			<ul class="sub">
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/user_report" title="">User Wise Report</a>
+				</li>
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/contest_report" title="">Contest Report</a>
+				</li>
+				<li class="last">
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/games_report" title="">Games Report</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin" class="exp">
+				<span>Withdrawal Request</span>
+			</a>
+			<ul class="sub">
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/withdrawal_request">Live Check</a>
+				</li>
+				<li>
+					<a href="<?php echo base_url();?>/fantasysports-php/admin/withdrawal_request_paypal">Paypal</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin/news" title="" class="">
+				<span>Manage News</span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin/youtube_url" title="Youtube Url" class="">
+				<span>Youtube Url</span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url();?>/fantasysports-php/admin/my_profile" title="My Profile" class="">
+				<span>My Profile</span>
+			</a>
+		</li>
+			</ul>
+</div>					<!-- Main View Start -->
+				<!-- Content -->
+<div class="content">
+	<div class="title">
+		<h5>Mearge Game</h5>
+	</div>
+	<!-- Static table with resizable columns -->
+	<form action="<?php echo base_url();?>/fantasysports-php/admin" id="game_list" class="frm_input" method="post" accept-charset="utf-8"><div class="widget mrt20">
+			<div class="head">
+				<h5 class="iFrames"><label>Game Selected for Merging</label></h5>
+				
+			</div>
+			<table cellpadding="0" cellspacing="0" width="100%" class="tableStatic resize display">
+				<thead>
+					<tr>
+						<td style="width:37%;">Game Name</td>
+						<td>Maximum Participents</td>
+						<td>Participent Joined</td>
+						<td>Participent Remaining</td>
+						<td>Entry Fee</td>
+						
+					</tr>
+				</thead>
+				<tbody id="gamelisting_container">
+                <tr>
+			<td><span>NFL Daily Salary Cap 55k Fri Aug 8th</span></td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">$ 1.00</td>
+			
+		</tr>
+                </tbody>
+			</table>
+		</div>
+<div class="reamin-user-detail">
+<div class="widget mrt20">
+			<div class="head">
+				<h5 class="iFrames"><label>Select Game to Merge with</label></h5>
+				
+			</div>
+			<table cellpadding="0" cellspacing="0" width="100%" class="tableStatic resize display">
+				<thead>
+					<tr>
+                    	<td>&nbsp;</td>
+						<td style="width:37%;">Game Name</td>
+						<td>Maximum Participents</td>
+						<td>Participent Joined</td>
+						<td>Participent Remaining</td>
+						<td>Entry Fee</td>
+						
+					</tr>
+				</thead>
+				<tbody id="gamelisting_container">
+                <tr>
+                <td align="center"><input name="user" type="radio" value=""></td>
+			<td><span>NFL Daily Salary Cap 55k Fri Aug 8th</span></td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">$ 1.00</td>
+			
+		</tr>
+         <tr>
+                <td align="center"><input name="user" type="radio" value=""></td>
+			<td><span>NFL Daily Salary Cap 55k Fri Aug 8th</span></td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">$ 1.00</td>
+			
+		</tr>
+         <tr>
+                <td align="center"><input name="user" type="radio" value=""></td>
+			<td><span>NFL Daily Salary Cap 55k Fri Aug 8th</span></td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">$ 1.00</td>
+			
+		</tr>
+         <tr>
+                <td align="center"><input name="user" type="radio" value=""></td>
+			<td><span>NFL Daily Salary Cap 55k Fri Aug 8th</span></td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">$ 1.00</td>
+			
+		</tr>
+                </tbody>
+			</table>
+		</div>
+
+
+</div>
+
+
+<!--Drag and Drop Table Start-->
+<div class="tblfrm drag-drop">
+    <div class="col">
+<table>
+    <thead>
+    <tr>
+    	<th>NFL Daily Salary Cap 55k Fri Aug 8th</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td>Franchise 1</td>
+    </tr>
+    <tr>
+    	<td>Franchise 2</td>
+    </tr>
+    <tr>
+    	<td>Franchise 3</td>
+    </tr>
+    </tbody>
+    </table></div>
+    <div class="dragndrop"></div>
+	<div class="col right">
+    <table>
+    <thead>
+    <tr>
+    	<th>NFL Daily Salary Cap 44k Fri Aug 5th</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td>Franchise 1</td>
+    </tr>
+    <tr>
+    	<td>Franchise 2</td>
+    </tr>
+    <tr>
+    	<td>Franchise 3</td>
+    </tr>
+    <tr>
+    	<td>Franchise 4</td>
+    </tr>
+    <tr>
+    	<td>Franchise 5</td>
+    </tr>
+    </tbody>
+</table></div>
+</div>
+
+<!--Drag and Drop Table End-->
+
+
+		
+		
+	</form></div>
+
+
+
+<script type="text/javascript" src="js/plugins/forms/forms.js?v=1.4"></script>
+<script type="text/javascript" src="js/plugins/tables/colResizable.min.js?v=1.4"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.alerts.js?v=1.4"></script>
+<script type="text/javascript" src="js/handlebars.js?v=1.4"></script>
+<script type="text/javascript" src="js/game.js?v=1.4"></script>	
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="js/drag.ui.core.js"></script>
+<script src="js/drag.ui.widget.js"></script>
+<script src="js/drag.ui.mouse.js"></script>
+<script src="js/drag.ui.draggable.js"></script>
+<script src="js/drag.ui.sortable.js"></script>
+
+
+		<!-- Main View End -->
+					</div>
+				<!-- Footer View Start -->
+			<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js?v=1.4"></script>
+<script type="text/javascript" src="js/common.js?v=1.4"></script>
+
+<script type="text/javascript">
+$(function(){
+	//consolidate popup drag n drop callin
+	$(".drag-drop table tbody" ).sortable({
+		connectWith: ".drag-drop table tbody"
+	});
+	//end
+});
+
+
+</script>
+
+
+
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+		<span>&copy; Copyright 2014. All rights reserved.</span>
+	</div>
+</div>
+<!-- Footer -->
+<div class="modal displayNone"><!-- Place at bottom of page --></div>		<!-- Footer View End -->
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+
+.flip2, .flip3, #alt-header{display:none;opacity:0}
+
+.center-3 { position: absolute; top: 50%; margin-top: -225px; left: 50%; height: 450px; right: 0;width:969px;margin-left:-484.5px }
+.center-5 { height: 300px; position: absolute; top: 50%; margin-top: -150px; left: 50%; right: 0;width:969px;margin-left:-484.5px}
+.center-4 { position: absolute; top: 50%; right: 0; left: 50%; height: 622px; margin-top: -311px;width:969px;margin-left:-484.5px}
+.head-3, head-4{display:block !important;visibility:visible !important}
+#section3 .play-game-details{position:absolute;left:50%;width:500px;margin-left:-250px}
+#section4 .play-game-details{position:absolute;left:50%;width:840px;margin-left:-420px}

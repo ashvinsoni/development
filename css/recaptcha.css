@@ -1,0 +1,29 @@
+#recaptcha_table tr td:nth-child(3n+3) {
+    display: none;
+}
+
+#recaptcha_table tr td:nth-child(2n+2) {
+    display: none;
+}
+.recaptchatable #recaptcha_image #recaptcha_challenge_image {
+  display: block;
+  width: 100%;
+}
+.recapt{padding: 6px;}
+#recaptcha_privacy{display: block;}
+#recaptcha_image { width: 376px !important;}
+#recaptcha_response_field{width: 328px !important;  border: 1px solid #ccc !important;  padding-left: 10px;}
+#recaptcha_table{
+  width: 200px;
+  border: none !important;
+}
+@media (max-width:767px) {
+#recaptcha_response_field {
+    width: 180px !important;
+   padding-left:10px;
+} 
+
+#recaptcha_image {
+  width: 190px !important;
+}
+}
